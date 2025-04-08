@@ -1,0 +1,94 @@
+*{
+    color: white;
+    box-sizing: border-box;
+}
+hr{
+ color: black;
+}
+body{
+    background-color: rgb(20, 5, 73); 
+    padding: 20px;
+ 
+}
+h1,h2,p{
+    color: white;
+    text-align: center;
+}
+legend{
+    color: white;
+    font-size: 150%;
+}
+a{
+    color: red;
+}
+input:focus{
+    background-color: rgb(29, 135, 24);
+}
+
+button{
+    background-color: green;
+    border-radius: 5px;
+} 
+
+fieldset{
+    width: 100%;
+    padding: 20px;
+    
+   
+}
+form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+textarea{
+    width: 100%;
+    height: auto;
+    color: black;
+}
+label, input, button {
+    display: block;
+    width: 100%;
+    
+}
+input{
+    color: black;
+}
+input[type="date"]{
+    color: rgb(94, 70, 70);
+}
+input[type="checkbox"]{
+    display: inline;
+    width: auto;
+}
+textarea:focus{
+    background-color: rgb(252, 211, 211);
+
+}
+address{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:center;
+ 
+}
+@media (max-width: 600px) {
+    form {
+      max-width: 90%;
+    }
+   
+  }
+  
+  @media (max-width: 768px) {
+    footer address {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 15px;
+    }
+  
+    footer address p {
+      font-size: 15px;
+    }
+  }

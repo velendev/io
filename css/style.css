@@ -1,0 +1,166 @@
+ header img {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      height: 30px;
+      width: 30px;
+  
+      }
+
+  html, body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+nav ul{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid gray;
+    box-shadow: 3px 3px 3px rgb(183, 248, 248);
+    border-radius: 10px;
+    
+}
+
+ nav ul,li{
+    list-style: none;
+}
+
+nav li {
+    border: 1px solid rgb(128, 128, 128);
+    box-shadow: 2px 2px 2px rgb(212, 202, 202);
+     border-radius: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-image:url("../image/backg.png");
+    background-color:rgba(35, 33, 33,0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Dancing Script', cursive;   
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+}
+  .setting{
+    max-width: 300px;
+    max-height: 300px;
+    box-shadow: 5px 5px 5px rgb(27, 25, 25);
+}
+
+ nav li:hover{
+    background: red;
+}
+ nav a:hover{
+    transition: 0.3;
+    color: blue;
+    text-decoration: underline;
+}
+.logo img{
+     height: 100px;
+     width: auto;
+}
+section{
+    border: 2px solid rgb(197, 192, 192);
+}
+.esempi{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.esempi img {
+    box-shadow: 7px 7px 7px black;
+
+}
+
+
+footer{
+    background-color: black;
+
+}
+footer p{
+    color: white;
+    border-radius: 5px;
+    
+}
+    @media screen and (max-width: 768px) {
+
+        /* MENU NAV */
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 0;
+        }
+      
+        nav li {
+          width: 90%;
+          margin: 5px auto;
+          text-align: center;
+        }
+      
+        nav a {
+          display: block;
+          padding: 10px;
+          font-size: 18px;
+        }
+      
+        /* LOGO */
+        .logo img {
+          height: 60px;
+          width: auto;
+          margin: 0 auto;
+          display: block;
+        }
+      
+        /* IMMAGINE PRINCIPALE */
+        .foto {
+          flex-direction: column;
+          padding: 10px;
+        }
+      
+        .setting {
+          max-width: 90%;
+          height: auto;
+        }
+      
+        /* SEZIONE ESEMPI */
+        .esempi {
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+        }
+      
+        .esempi img {
+          width: 90%;
+          max-width: 300px;
+        }
+      
+        /* TESTO BENVENUTO */
+        ul h1 {
+          font-size: 24px;
+          text-align: center;
+        }
+      
+        ul li {
+          font-size: 16px;
+          padding: 10px;
+        }
+      
+        /* FOOTER */
+        footer {
+          padding: 20px 10px;
+          text-align: center;
+        }
+      
+        footer p {
+          font-size: 14px;
+        }
+      }
+  

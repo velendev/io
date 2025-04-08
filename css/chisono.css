@@ -65,8 +65,9 @@ footer{
     justify-content: space-between;
     color: white;
 }
+@media screen and (max-width: 768px) {
 
-@media (max-width: 768px) {
+    /* MENU NAV */
     nav ul {
       flex-direction: column;
       align-items: center;
@@ -74,7 +75,7 @@ footer{
     }
   
     nav li {
-      width: 100%;
+      width: 90%;
       margin: 5px auto;
       text-align: center;
     }
@@ -84,4 +85,57 @@ footer{
       padding: 10px;
       font-size: 18px;
     }
+  
+    /* LOGO */
+    .logo img {
+      height: 60px;
+      width: auto;
+      margin: 0 auto;
+      display: block;
+    }
+  
+    /* IMMAGINE PRINCIPALE */
+    .foto {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .setting {
+      max-width: 90%;
+      height: auto;
+    }
+  
+    /* SEZIONE ESEMPI */
+    .esempi {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .esempi img {
+      width: 90%;
+      max-width: 300px;
+    }
+  
+    /* TESTO BENVENUTO */
+    ul h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    ul li {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    /* FOOTER */
+    footer {
+      padding: 20px 10px;
+      text-align: center;
+    }
+  
+    footer p {
+      font-size: 14px;
+    }
   }
+
